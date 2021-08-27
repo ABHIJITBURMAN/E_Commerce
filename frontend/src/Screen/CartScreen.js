@@ -42,7 +42,7 @@ const CartScreen = ({ match, location, quentity, history }) => {
                       <Image src={item.image} alt={item.name} fluid rounded />
                     </Col>
                     <Col md={3}>
-                      <Link to={`/product/${item.product}`}>{item.name}</Link>
+                      <Link to={`/products/${item.product}`}>{item.name}</Link>
                     </Col>
                     <Col md={2}> ₹{item.price}</Col>
                     <Col md={2}>

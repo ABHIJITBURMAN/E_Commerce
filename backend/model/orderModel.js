@@ -7,7 +7,7 @@ const orderSchema = mongoose.Schema(
       required: true,
       ref: 'User',
     },
-    orderItem: [
+    orderItems: [
       {
         name: { type: String, required: true },
         qty: { type: Number, required: true },
@@ -51,7 +51,7 @@ const orderSchema = mongoose.Schema(
       required: true,
       default: 0,
     },
-    isPaidValue: {
+    isPaid: {
       type: Boolean,
       required: true,
       default: false,
@@ -64,7 +64,7 @@ const orderSchema = mongoose.Schema(
       required: true,
       default: false,
     },
-    deliverdAt: {
+    deliveredAt: {
       type: Date,
     },
   },
